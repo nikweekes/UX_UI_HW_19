@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+  }
+  body, html {
+      height: 100%;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.imgur.com/ihEvjV6.png);
+    height:65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+ 
+  .navbar {
+    overflow: hidden; 
+    background-color: #333; 
+  }
+  
+  /* Style the navigation bar links */
+ 
+  .navbar a {
+    float: right; 
+    display: block;
+    color: white; 
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+  }
+  .navbar img {
+    float: left;
+    margin: 0px 0px 0px 50px;
+}
+
+  .navbar a:hover {
+    background-color: #ddd; 
+    color: black; 
+  }
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .side {
+    flex: 40%; 
+    background-color: #f1f1f1; 
+    padding: 20px; 
+  }
+  
+  /* Main column */
+  .main {
+    flex: 60%; 
+    background-color: white; 
+    padding: 20px; 
+  }
+  
+  @media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  
+  .row {margin: 0 -5px;}
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    justify-content: center;
+  }
+  
+  .work-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #4B4848;
+    color: white;
+  }
+  .card img {
+    justify-content: center;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: grey;
+    background-color:#f2f2f2;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs for contact form */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #4B4848;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .footer {
+    padding: 20px; 
+    text-align: center;
+    overflow: hidden;
+    background-color: #333; 
+  }
+  
+  /* Style the navigation bar links */
+  .footer a {
+    float: center; 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none;
+  }
+  .footer a:hover {
+    background-color: #ddd; 
+    color: black; 
+  }
+  /*.grid-container {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  
+  .grid-container > div  {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center; 
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .item1 item2 item3 item4 item5 item6 {
+    grid-column: 1/span 1;
+  }*/
+
+
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+}
